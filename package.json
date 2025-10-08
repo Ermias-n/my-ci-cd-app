@@ -1,14 +1,14 @@
 {
-  "name": "my-ci-cd-app",
+  "name": "weather-dashboard",
   "version": "1.0.0",
-  "description": "Sample Node.js app for CI/CD pipeline",
+  "description": "Weather Dashboard with CI/CD Pipeline",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "test": "echo \"No tests yet\" && exit 0"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "axios": "^1.6.0"
   }
 }
-

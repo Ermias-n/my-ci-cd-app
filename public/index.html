@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🌤️ Weather Dashboard</h1>
+
+        <div class="search-container">
+            <input type="text" id="cityInput" placeholder="Enter city name..." />
+            <button onclick="getWeather()">Get Weather</button>
+        </div>
+
+        <div id="weatherCard" class="weather-card hidden">
+            <h2 id="cityName"></h2>
+            <div class="weather-info">
+                <div id="weatherIcon"></div>
+                <div class="details">
+                    <p>Temperature: <span id="temperature"></span>°C</p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Description: <span id="description"></span></p>
+                    <p>Wind Speed: <span id="windSpeed"></span> m/s</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="errorMessage" class="error hidden">
+            City not found. Please try again.
+        </div>
+
+        <div class="recent-cities">
+            <h3>Try these cities:</h3>
+            <div class="city-buttons">
+                <button onclick="searchCity('London')">London</button>
+                <button onclick="searchCity('New York')">New York</button>
+                <button onclick="searchCity('Tokyo')">Tokyo</button>
+                <button onclick="searchCity('Paris')">Paris</button>
+                <button onclick="searchCity('Sydney')">Sydney</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
